@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://db.onlinewebfonts.com/c/452ec27decf4369db2b93619854b5638?family=FuseV.2Display-Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/452ec27decf4369db2b93619854b5638?family=FuseV.2Display-Regular"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="/style/navigation.css">
+    <link rel="stylesheet" href="style/hero.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <nav class="nav-section">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/nav-bar/navbarLogo.png" alt="Logo">
+            </div>
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+            </label>
+        </nav>
+
+        <div class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-overlay-item">Konferencija</a></li>
+                <li><a href="#" class="nav-overlay-item">Raspored</a></li>
+                <li><a href="#" class="nav-overlay-item">Sponzori</a></li>
+                <li><a href="#" class="nav-overlay-item">Kontakt</a></li>
+                <li><a href="#" class="nav-overlay-item registration">Registracija</a></li>
+                <li><button class="reg-btn">Prijava</button></li>
+            </ul>
+        </div>
+    </nav>
 </body>
+
 </html>
