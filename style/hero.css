@@ -1,0 +1,91 @@
+.hero-content {
+    padding: 0 40px;
+    margin-top: 60px;
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif; 
+}
+.main-title {
+    font-size: clamp(2.5rem, 8vw, 4rem); 
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.word-rotator {
+    position: relative;
+    display: inline-block;
+    color: var(--dump-cyan);
+    vertical-align: bottom;
+    border-right: 5px solid var(--dump-cyan); 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    animation: 
+        typing-sequence 35s steps(15) infinite, 
+        cursor-blink 0.8s step-end infinite;
+}
+.word-rotator::before {
+    content: "dizajnera";
+    animation: word-switch 35s infinite;
+}
+@keyframes typing-sequence {
+    0% { width: 0; }
+    4%, 16% { width: 8.5ch; } 
+    20% { width: 0; }
+    20.01% { width: 0; }
+    24%, 36% { width: 11.5ch; }
+    40% { width: 0; }
+    40.01% { width: 0; }
+    44%, 56% { width: 10.5ch; }
+    60% { width: 0; }
+    60.01% { width: 0; }
+    64%, 76% { width: 9ch; }
+    80% { width: 0; }
+    80.01% { width: 0; }
+    84%, 96% { width: 9.5ch; }
+    100% { width: 0; }
+}
+@keyframes word-switch {
+    0%, 20%      { content: "dizajnera"; }
+    20.01%, 40%  { content: "marketingaša"; }
+    40.01%, 60%  { content: "poduzetnika"; }
+    60.01%, 80%  { content: "digitalaca"; }
+    80.01%, 100% { content: "developera"; }
+}
+@keyframes cursor-blink {
+    50% { border-color: transparent; }
+}
+.hero-date {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+.btn {
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+.btn:active { transform: scale(0.95); }
+.btn-login {
+    background-color: var(--dump-cyan);
+    color: #0a1414;
+}
+.btn-login:hover {
+    background-color: #27b3ad;
+}
+.btn-join {
+    background-color: transparent;
+    color: var(--title-color);
+    border: 2px solid var(--title-color);
+}

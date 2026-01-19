@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://db.onlinewebfonts.com/c/452ec27decf4369db2b93619854b5638?family=FuseV.2Display-Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/452ec27decf4369db2b93619854b5638?family=FuseV.2Display-Regular"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/top-description.css">
+    <link rel="stylesheet" href="style/lecture.css">
+    <link rel="stylesheet" href="style/how.css">
+    <link rel="stylesheet" href="style/sliding-animations.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <nav class="nav-section">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/nav-bar/navbarLogo.png" alt="Logo">
+            </div>
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-overlay-item">Konferencija</a></li>
+                <li><a href="#" class="nav-overlay-item">Raspored</a></li>
+                <li><a href="#" class="nav-overlay-item">Sponzori</a></li>
+                <li><a href="#" class="nav-overlay-item">Kontakt</a></li>
+                <li><a href="#" class="nav-overlay-item registration">Registracija</a></li>
+                <li><button class="reg-btn">Prijava</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-content">
+        <div class="hero-text-wrapper">
+            <h1 class="main-title">
+                Konferencija <br>
+                za novu generaciju <br>
+                <span class="word-rotator"></span>
+            </h1>
+            <p class="hero-date">14. i 15. svibnja 2021. - FESB, Split</p>
+
+            <div class="hero-btns">
+                <button class="btn btn-login">Prijava</button>
+                <button class="btn btn-join">Pridruži se</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="description">
+        <div class="slideshow-container">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+        </div>
+
+        <div class="description-title-container">
+            <div class="description-title">Dev, Dizajn, Marketing & Tech konferencija</div>
+            <div class="description-arrow"></div>
+        </div>
+
+        <div class="description-paragraph">
+            DUMP Days konferencija se nakon godine stanke vraća u novom formatu! Kao i do sada, najutjecajniji ljudi
+            hrvatske IT scene pričat će o aktualnim temama iz svijeta Deva, Dizajna, Marketinga i Techa. Ne propustite
+            ovu jedinstvenu priliku, zavirite u poslovni svijet i saznajte kako započeti svoju karijeru.
+        </div>
+    </div>
+
+    <div class="lecture">
+        <div class="lecture-container lecture-container1">
+            <div class="lecture-pic"></div>
+            <div class="lecture-info reveal-left">
+                <div class="lecture-title-container">
+                    <div class="title-icon lecture-title1"></div>
+                    <div class="lecture-title">Predavanja</div>
+                    <div class="lecture-live">Online</div>
+                </div>
+                <div class="lecture-paragraph">Pridruži se zanimljivim predavanjima stručnjaka o aktualnim Dev, Design,
+                    Marketing & Tech temama.</div>
+            </div>
+            <div class="lecture-info reveal-left">
+                <div class="lecture-title-container">
+                    <div class="title-icon lecture-title2"></div>
+                    <div class="lecture-title">Radionice</div>
+                    <div class="lecture-live">Uživo</div>
+                </div>
+                <div class="lecture-paragraph">Praktičan rad na radionicama koje vode stručnjaci za najnovije
+                    tehnologije obogatit će te novim vještinama.</div>
+            </div>
+            <div class="lecture-info reveal-left">
+                <div class="lecture-title-container">
+                    <div class="title-icon lecture-title3"></div>
+                    <div class="lecture-title">Panel Rasprave</div>
+                    <div class="lecture-live">Online</div>
+                </div>
+                <div class="lecture-paragraph">Kroz moderirane rasprave saznaj kakva su mišljenja profesionalaca o
+                    zanimljivim temama iz IT svijeta.</div>
+            </div>
+        </div>
+        <div class="lecture-container lecture-container2">
+            <div class="lecture-pic"></div>
+            <div class="lecture-info reveal-right">
+                <div class="lecture-title-container">
+                    <div class="title-icon lecture-title4"></div>
+                    <div class="lecture-title">Fly talks</div>
+                    <div class="lecture-live">Uživo</div>
+                </div>
+                <div class="lecture-paragraph">Tražiš posao? Porazgovaraj s poslodavcima oči u oči i saznaj jesi li
+                    upravo ti ono što im treba.</div>
+            </div>
+            <div class="lecture-info reveal-right">
+                <div class="lecture-title-container">
+                    <div class="title-icon lecture-title5"></div>
+                    <div class="lecture-title">Nagrade</div>
+                </div>
+                <div class="lecture-paragraph">Iskaži se u ispunjavanju zadataka koji će ti omogućiti uživanje u
+                    vrijednim nagradama.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-section">
+        <div class="how-container">
+            <div class="how-main-title">Kako će DUMP Days izgledati 2021.?</div>
+            <div class="how-paragraph">Ove godine donosimo konferenciju u hibridnom obliku! Nudimo mnoštvo sadržaja na
+                FESB-u, ali i za sve koji odluče sudjelovati iza svojih ekrana.</div>
+        </div>
+        <div class="how-container reveal-left">
+            <div class="how-title-container">
+                <div class="how-title-icon how-title1"></div>
+                <div class="how-title">Uživo</div>
+            </div>
+            <div class="how-paragraph">Uz prethodnu prijavu na aplikaciji te poštivajući epidemiološke mjere, uživo
+                sudjeluj na radionicama, druži se s predstavnicima IT tvrtki i razgovaraj s budućim poslodavcima.</div>
+        </div>
+        <div class="how-container reveal-right">
+            <div class="how-title-container">
+                <div class="how-title-icon how-title2"></div>
+                <div class="how-title">Online</div>
+            </div>
+            <div class="how-paragraph">Na našem YouTube kanalu, u stvarnom vremenu, prati sva predavanja i panel
+                rasprave u kojima imaš priliku poslušati iskustva brojnih stručnjaka iz svijeta IT-ja.</div>
+        </div>
+    </div>
 </body>
 </html>
