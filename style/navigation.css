@@ -86,3 +86,6 @@
 .menu-checkbox:checked ~ .navbar .hamburger span:nth-child(2) {
     transform: translateY(-5px) rotate(-45deg);
 }
+.menu-checkbox{
+    display: none;
+}

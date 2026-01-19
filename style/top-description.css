@@ -1,0 +1,75 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px; 
+    max-width: 390px; 
+    margin: 0 auto;
+    color: var(--title-color);
+    font-family: var(--main-font);
+}
+.slideshow-container {
+    position: relative;
+    width: 327px; 
+    height: 220px; 
+    border-radius: 40px; 
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 15px; 
+    background-color: var(--background-color);
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeSlideshow 40s infinite;
+}
+.slide1 { background-image: url('../assets/top-description/flytalks.jpg'); animation-delay: 0s; }
+.slide2 { background-image: url('../assets/top-description/speech.png'); animation-delay: 10s; }
+.slide3 { background-image: url('../assets/top-description/students.jpg'); animation-delay: 20s; }
+.slide4 { background-image: url('../assets/top-description/venue.png'); animation-delay: 30s; }
+@keyframes fadeSlideshow {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.description-title-container {
+    position: relative; 
+    width: 327px; 
+    margin-bottom: 10px; 
+    display: block;
+}
+.description-title {
+    width: 279px; 
+    height: auto; 
+    font-size: 2.2rem; 
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+}
+.description-arrow {
+    display: block;
+    position: absolute;
+    top: 5.25rem; 
+    right: 0; 
+    width: 32px; 
+    height: 32px; 
+    background: url('../assets/top-description/arrow-right.png') no-repeat center center/contain;
+    z-index: 10;
+}
+.description-paragraph {
+    width: 327px; 
+    height: auto; 
+    font-size: 1rem; 
+    line-height: 1.5;
+    color: var(--text-secondary);
+    opacity: 1;
+    margin-top: 5px; 
+}
