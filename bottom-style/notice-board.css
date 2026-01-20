@@ -29,7 +29,7 @@
     overflow: auto;
 }
 
-.job-gold-slider-item{
+.job-slider-item{
     width: 464px;
     max-width: 464px;
     min-width: 464px;
@@ -57,6 +57,7 @@
     align-items: center;
     font-size: 16px;
     gap: 5px;
+    margin-bottom: 40px;
 }
 
 .job-description {
