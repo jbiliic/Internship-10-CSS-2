@@ -7,7 +7,15 @@
     color: #30cec2;
 }
 
-.silver-sponsors-container{
+.bronze-sponsors-title{
+    margin-top: 45px;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: #30cec2;
+}
+
+.sponsors-container{
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -17,7 +25,7 @@
     justify-content: center;
 }
 
-.silver-sponsor-wrapper{
+.sponsor-wrapper{
     margin-top: 50px;
     width: 100%;
     display: flex;
@@ -25,7 +33,7 @@
     justify-content: center;
 }
 
-.silver-sponsor-wrapper .background-logo{
+.sponsor-wrapper .background-logo{
     width: 160px;
     height: 140px;
 }
