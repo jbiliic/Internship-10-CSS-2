@@ -7,7 +7,7 @@
     color: #30cec2;
 }
 
-.bronze-sponsors-title{
+.other-sponsors-title{
     margin-top: 45px;
     margin-bottom: 75px;
     text-align: center;
@@ -36,4 +36,5 @@
 .sponsor-wrapper .background-logo{
     width: 160px;
     height: 140px;
+    background-position: center;
 }
