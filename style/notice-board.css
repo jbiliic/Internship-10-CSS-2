@@ -1,23 +1,23 @@
 .notice-board-title{
-    font-size: 32px;
-    line-height: 38px;
+    font-size: var(--title-main-size);
+    line-height: 2.28rem;
     font-weight: 800;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
 .notice-board-subtitle{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: var(--title-size);
+    line-height: 2.25rem;
     font-weight: 800;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     text-align: center;
-    color: #30cec2;
+    color: var(--dump-cyan);
 }
 
 .background-logo {
-    width: 160px;
-    height: 50px;
+    width: 10rem;
+    height: 3.13rem;
     background-position: 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -30,49 +30,49 @@
 }
 
 .job-slider-item{
-    width: 464px;
-    max-width: 464px;
-    min-width: 464px;
-    padding: 20px 40px 30px 40px;
+    width: 29rem;
+    max-width: 29rem;
+    min-width: 29rem;
+    padding: 1.25rem 2.5rem 1.88rem 2.5rem;
     height: fit-content;
-    margin-bottom: 100px;
-    margin-left: 30px;
-    border-radius: 30px;
+    margin-bottom: 6.25rem;
+    margin-left: 1.88rem;
+    border-radius: 1.88rem;
     background: hsla(0, 0%, 100%, .05);
 }
 
 .job-name{
     display: flex;
-    height: 50px;
+    height: 3.13rem;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 8px;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .job-location{
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .job-description {
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .find-out-more-button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 32px;
-    font-size: 18px;
-    background-color: #30cec2;
-    border-radius: 10px;
+    padding: 0.625rem 2rem;
+    font-size: 1.125rem;
+    background-color: var(--dump-cyan);
+    border-radius: 0.625rem;
     color: #0a181b;
     font-weight: 900;
 }
