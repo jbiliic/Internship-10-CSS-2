@@ -1,0 +1,65 @@
+.contact-container{
+    max-width: 1440px;
+    padding: 60px 23px 270px 23px;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+}
+
+.contact-planes{
+    width: 400px;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    z-index: 0;
+}
+
+.contact-text{
+    margin-bottom: 3rem;
+}
+
+.contact-title{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.contact-button{
+    width: 185px;
+    padding: 12px 24px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.facebook-contact{
+    background: #1e88e5;
+}
+
+.email-contact{
+    background: var(--dump-cyan);
+    color: black;
+}
+
+.button-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
