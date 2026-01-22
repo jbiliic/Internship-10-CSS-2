@@ -4,6 +4,7 @@
     --dump-cyan: #30CEC2;
     --title-color: #fff;
     --text-secondary: hsla(0, 0%, 100%, .8);
+    --card-background: #FFFFFF0D;
     
     /* fonts */
     --main-font: 'FuseV.2Display-Regular', sans-serif;
