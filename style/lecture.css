@@ -85,3 +85,80 @@
     width: 100%;
     padding-left: 10px; 
 }
+@media (min-width: 1150px) {
+    /* Proširujemo glavni kontejner i povećavamo razmak između sekcija */
+    .lecture {
+        max-width: 1200px;
+        padding: 100px 40px;
+        gap: 180px; /* Razmak između gornje i donje velike grupe */
+    }
+
+    /* Pretvaramo kontejnere u Grid s dva stupca */
+    .lecture-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 580px; 
+        column-gap: 80px;
+        align-items: center;
+    }
+
+    /* Gornja sekcija: Tekst lijevo, slika desno */
+    .lecture-container1 .lecture-pic {
+        grid-column: 2;
+        grid-row: 1 / span 3; /* Slika se rasteže uz sva 3 info bloka */
+        height: 605px;
+        width: 505px;
+        margin-bottom: 0;
+    }
+
+    .lecture-container1 .lecture-info {
+        grid-column: 1;
+        max-width: 400px;
+    }
+
+    /* Donja sekcija: Slika lijevo, tekst desno (Cik-cak efekt) */
+    .lecture-container2 {
+        grid-template-columns: 580px 1fr;
+    }
+
+    .lecture-container2 .lecture-pic {
+        grid-column: 1;
+        grid-row: 1 / span 2; 
+        height: 605px;
+        width: 505;
+        margin-bottom: 0;
+    }
+
+    .lecture-container2 .lecture-info {
+        grid-column: 2;
+        max-width: 400px;
+    }
+
+    /* Desktop prilagodbe za tekst i elemente */
+    .lecture-title {
+        font-size: 2.2rem; /* Veći naslovi na desktopu */
+    }
+
+    .lecture-paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 300px;
+    }
+
+    .lecture-info {
+        margin-bottom: 30px; /* Veći razmak između blokova teksta */
+    }
+
+    /* Povećavamo ikone za desktop vizual */
+    .title-icon {
+        width: 45px;
+        height: 45px;
+        left: -20px;
+    }
+
+    /* Pozicioniranje badgeva (Online/Uživo) */
+    .lecture-live {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+}

@@ -73,3 +73,75 @@
     opacity: 1;
     margin-top: 5px; 
 }
+.decoration-ring,.decoration-sphere {
+    display: none; 
+}
+@media (min-width: 1150px) {
+    .description {
+        display: flex;
+        flex-direction: column; 
+        max-width: 1400px;
+        margin: 120px auto;
+        position: relative;
+        padding: 0;
+    }
+    .slideshow-container {
+        width: 850px; 
+        height: 480px;
+        border-radius: 60px;
+        margin-bottom: 80px; 
+        align-self: flex-start; 
+        margin-left: 50px; 
+    }
+    .description-text-wrapper {
+        align-self: flex-end; 
+        width: 100%;
+        max-width: 600px; 
+        margin-right: 80px; 
+        display: flex;
+        flex-direction: column; 
+        gap: 24px; 
+        align-items: flex-start;
+    }
+    .description-title-container {
+        width: 100%;
+    }
+    .description-title {
+        width: 100%;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        font-weight: 800;
+        text-align: left;
+    }
+    .description-arrow {
+        display: none; 
+    }
+    .description-paragraph {
+        width: 100%;
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .decoration-ring, .decoration-sphere {
+        display: block; 
+    }
+    .decoration-ring {
+        position: absolute;
+        top: 640px; 
+        left: -50px; 
+        width: 500px;
+        height: 500px;
+        background: url('../assets/top-description/ring.png') no-repeat center/contain;
+        z-index: 1;
+        animation: floatRing 6s ease-in-out infinite;
+    }
+    .decoration-sphere {
+        position: absolute;
+        bottom: -220px;
+        right: 200px;
+        width: 250px;
+        height: 250px;
+        background: url('../assets/top-description/sphere.png') no-repeat center/contain;
+        z-index: 1;
+    }
+}
