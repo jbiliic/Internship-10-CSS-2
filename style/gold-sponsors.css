@@ -6,6 +6,8 @@
 }
 
 .sponsors{
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -17,8 +19,38 @@
     margin-bottom: 3.13rem;
 }
 
+@media(min-width: 900px){
+
+    .sponsors{
+        gap: 5rem;
+    }
+
+    .gold-sponsor{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .left{
+        flex-direction: row-reverse;
+    }
+
+    .sponsor-image{
+        flex: 0 0 50%;
+    }
+
+    .sponsor-info{
+        flex: 0 0 50%;
+    }
+
+}
+
 .sponsor-image{
     border-radius: 1.88rem;
+}
+
+.sponsor-info{
+    display: flex;
+    flex-direction: column;
 }
 
 .sponsor-heading{
