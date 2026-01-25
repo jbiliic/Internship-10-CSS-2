@@ -1,91 +1,151 @@
 .nav-section {
-    width: 100%;
-    height: 50vh;
-    background: url('../assets/hero/header.png') no-repeat center center/cover;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  background: url("../assets/hero/header.png") no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
 }
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px;
+  position: relative;
+  z-index: 100;
+}
+.logo img {
+  width: 60px;
+  height: auto;
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 50;
+}
+.menu-checkbox:checked ~ .navbar .nav-overlay {
+  transform: translateY(0%);
+}
+.nav-links {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.nav-links li {
+  margin: 40px 0;
+}
+.nav-overlay-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: none;
+  font-family: var(--main-font);
+  transition: opacity 0.3s;
+}
+.nav-overlay-item.registration {
+  color: var(--dump-cyan);
+}
+.reg-btn {
+  color: var(--background-color);
+  background-color: var(--dump-cyan);
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 35px;
+  z-index: 101;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--title-color);
+  transition: 0.3s;
+}
+.menu-checkbox:checked ~ .navbar .hamburger span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.menu-checkbox:checked ~ .navbar .hamburger span:nth-child(2) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+.menu-checkbox {
+  display: none;
+}
+@media (min-width: 1150px) {
+  .nav-section {
+    background: transparent;
+    height: auto;
+    margin-bottom: -300px;
+  }
+  .logo img {
+    content: url("../assets/nav-bar/logotype-white.png");
+    width: 100px;
+    height: auto;
+  }
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 25px; 
-    position: relative;
-    z-index: 100; 
-}
-.logo img {
-    width: 60px;
+    padding: 40px 15% 20px 15%;
+  }
+  .nav-overlay {
+    position: static;
+    transform: none;
+    background: transparent;
+    width: auto;
     height: auto;
-}
-.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color); 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-100%); 
-    transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 50;
-}
-.menu-checkbox:checked ~ .nav-overlay {
-    transform: translateY(0%);
-}
-.nav-links {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-.nav-links li {
-    margin: 40px 0;
-}
-.nav-overlay-item {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 800;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .nav-links li {
+    margin: 0;
+  }
+  .nav-overlay-item {
+    font-size: 0.9rem;
+    font-weight: 700;
     text-transform: none;
-    font-family: var(--main-font);
-    transition: opacity 0.3s;
-}
-.nav-overlay-item.registration {
-    color: var(--dump-cyan);
-}
-.reg-btn {
-    color: var(--background-color);
-    background-color: var(--dump-cyan);
-    border: none;
-    padding: 12px 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-.hamburger {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 35px;
-    z-index: 101;
-}
-.hamburger span {
-    display: block;
-    width: 100%;
+    color: var(--title-color);
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .nav-overlay-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
     height: 2px;
-    background-color: var(--title-color);
-    transition: 0.3s;
-}
-.menu-checkbox:checked ~ .navbar .hamburger span:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
-}
-.menu-checkbox:checked ~ .navbar .hamburger span:nth-child(2) {
-    transform: translateY(-5px) rotate(-45deg);
-}
-.menu-checkbox{
-    display: none;
+    background-color: var(--dump-cyan);
+    transition: width 0.3s ease;
+  }
+  .nav-overlay-item:hover::after {
+    width: 100%;
+  }
+  .hamburger,
+  .nav-links .registration,
+  .nav-links .reg-btn {
+    display: none ;
+  }
 }
