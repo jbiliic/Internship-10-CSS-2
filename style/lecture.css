@@ -1,164 +1,170 @@
 .lecture {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 24px;
-    max-width: 390px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    font-family: var(--main-font);
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  max-width: 390px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  font-family: var(--main-font);
+  gap: 60px;
 }
 .lecture-container {
-    display: flex;
-    flex-direction: column;
-    width: 327px;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  gap: 25px;
 }
 .lecture-pic {
-    width: 100%;
-    height: 400px;
-    border-radius: 40px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 400px;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
 }
-.lecture-container1 .lecture-pic { background-image: url('../assets/lectures/pics/pic1.png'); }
-.lecture-container2 .lecture-pic { background-image: url('../assets/lectures/pics/pic2.png'); }
+.lecture-container1 .lecture-pic {
+  background-image: url("../assets/lectures/pics/pic1.png");
+}
+.lecture-container2 .lecture-pic {
+  background-image: url("../assets/lectures/pics/pic2.png");
+}
 
 .lecture-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .lecture-title-container {
-    display: flex;
-    align-items: center;
-    position: relative; 
-    height: 50px; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
 }
 .title-icon {
-    position: absolute;
-    left: -15px; 
-    width: 35px; 
-    height: 35px;
-    background-size: contain;
-    background-position: center;
-    z-index: 1; 
-    opacity: 0.5; 
+  position: absolute;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.5;
 }
-.lecture-title1 { background-image: url('../assets/lectures/logos/logo1.png'); }
-.lecture-title2 { background-image: url('../assets/lectures/logos/logo2.png'); }
-.lecture-title3 { background-image: url('../assets/lectures/logos/logo3.png'); }
-.lecture-title4 { background-image: url('../assets/lectures/logos/logo4.png'); }
-.lecture-title5 { background-image: url('../assets/lectures/logos/logo5.png'); }
+.lecture-title1 {
+  background-image: url("../assets/lectures/logos/logo1.png");
+}
+.lecture-title2 {
+  background-image: url("../assets/lectures/logos/logo2.png");
+}
+.lecture-title3 {
+  background-image: url("../assets/lectures/logos/logo3.png");
+}
+.lecture-title4 {
+  background-image: url("../assets/lectures/logos/logo4.png");
+}
+.lecture-title5 {
+  background-image: url("../assets/lectures/logos/logo5.png");
+}
 
 .lecture-title {
-    font-size: var(--title-size);
-    font-weight: 800;
-    color: var(--title-color);
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    margin-left: 10px; 
+  font-size: var(--title-size);
+  font-weight: 800;
+  color: var(--title-color);
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-left: 10px;
 }
 .lecture-live {
-    background-color: var(--dump-cyan);
-    color: var(--background-color);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 0.7rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-left: 10px;
-    width: fit-content; 
-    display: inline-block;
-    position: relative;
-    z-index: 2;
+  background-color: var(--dump-cyan);
+  color: var(--background-color);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 .lecture-paragraph {
-    font-size: var(--text-secondary-size);
-    line-height: 1.5;
-    color: var(--text-secondary);
-    width: 100%;
-    padding-left: 10px; 
+  font-size: var(--text-secondary-size);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  width: 100%;
+  padding-left: 10px;
 }
 @media (min-width: 1150px) {
-    /* Proširujemo glavni kontejner i povećavamo razmak između sekcija */
-    .lecture {
-        max-width: 1200px;
-        padding: 100px 40px;
-        gap: 180px; /* Razmak između gornje i donje velike grupe */
-    }
-
-    /* Pretvaramo kontejnere u Grid s dva stupca */
-    .lecture-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 580px; 
-        column-gap: 80px;
-        align-items: center;
-    }
-
-    /* Gornja sekcija: Tekst lijevo, slika desno */
-    .lecture-container1 .lecture-pic {
-        grid-column: 2;
-        grid-row: 1 / span 3; /* Slika se rasteže uz sva 3 info bloka */
-        height: 605px;
-        width: 505px;
-        margin-bottom: 0;
-    }
-
-    .lecture-container1 .lecture-info {
-        grid-column: 1;
-        max-width: 400px;
-    }
-
-    /* Donja sekcija: Slika lijevo, tekst desno (Cik-cak efekt) */
-    .lecture-container2 {
-        grid-template-columns: 580px 1fr;
-    }
-
-    .lecture-container2 .lecture-pic {
-        grid-column: 1;
-        grid-row: 1 / span 2; 
-        height: 605px;
-        width: 505;
-        margin-bottom: 0;
-    }
-
-    .lecture-container2 .lecture-info {
-        grid-column: 2;
-        max-width: 400px;
-    }
-
-    /* Desktop prilagodbe za tekst i elemente */
-    .lecture-title {
-        font-size: 2.2rem; /* Veći naslovi na desktopu */
-    }
-
-    .lecture-paragraph {
-        font-size: 1rem;
-        line-height: 1.5;
-        max-width: 300px;
-    }
-
-    .lecture-info {
-        margin-bottom: 30px; /* Veći razmak između blokova teksta */
-    }
-
-    /* Povećavamo ikone za desktop vizual */
-    .title-icon {
-        width: 45px;
-        height: 45px;
-        left: -20px;
-    }
-
-    /* Pozicioniranje badgeva (Online/Uživo) */
-    .lecture-live {
-        font-size: 0.8rem;
-        padding: 4px 10px;
-    }
+  .lecture {
+    max-width: 1200px;
+    padding: 100px 40px;
+    gap: 180px;
+  }
+  .lecture-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 580px;
+    column-gap: 80px;
+    align-items: center;
+    z-index: 2;
+  }
+  .lecture-container1 .lecture-pic {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    height: 605px;
+    width: 505px;
+    margin-bottom: 0;
+  }
+  .lecture-container1 .lecture-info {
+    grid-column: 1;
+    max-width: 400px;
+  }
+  .lecture-container2 {
+    display: grid;
+    grid-template-columns: 580px 1fr;
+    grid-template-rows: min-content min-content;
+    height: 605px; 
+    row-gap: 20px; 
+  }
+  .lecture-container2 .lecture-pic {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 605px;
+    width: 505;
+    margin-bottom: 0;
+    row-gap: 5px; 
+    align-items: start;
+    align-content: center;
+  }
+  .lecture-container2 .lecture-info {
+    grid-column: 2;
+    max-width: 400px;
+    z-index: 2;
+    margin: 0 ;
+  }
+  .lecture-title {
+    font-size: 32px;
+  }
+  .lecture-paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 300px;
+  }
+  .lecture-info {
+    margin-bottom: 30px;
+  }
+  .title-icon {
+    width: 45px;
+    height: 45px;
+    left: -20px;
+  }
+  .lecture-live {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
 }
