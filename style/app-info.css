@@ -16,10 +16,31 @@
 }
 
 @media(min-width: 770px){
+    .app-info-wrapper{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-direction: row-reverse;
+    }
 
+    .content-wrapper{
+        padding-left: 200px;
+    }
+
+    .phone-image-wrapper{
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        flex: 0 0 60%;
+    }
+
+    .content-wrapper{
+        flex: 0 0 40%;
+    }
 }
+
 .app-info-item{
-    margin-top: 3rem;
+    margin-top: 5rem;
     position: relative;
 }
 
@@ -33,7 +54,7 @@
 }
 
 .info-item-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2.25rem;
     font-weight: 800;
     margin-bottom: 8px;
