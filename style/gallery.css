@@ -10,26 +10,70 @@
 }
 
 .slideable-sliding{
-  overflow-x: auto;
+  overflow: hidden; 
   width: 100%;
+}
+
+.slider-track{
+  display: flex;
+  width: max-content; 
+  animation: scroll 60s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.slideable-sliding:active .slider-track{
+  animation-play-state: paused;
+}
+
+
+.slideable-sliding{
+  cursor: grab;
+}
+
+.slideable-sliding:active{
+  cursor: grabbing;
 }
 
 .grid{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 16rem;
-  grid-template-rows: 220px 220px;
-  column-gap: 1.5rem;
-  row-gap: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 17rem 17rem 17rem 17rem;
+    grid-template-rows: 12.5rem 12.5rem;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
 }
 
 .grid img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
 }
+
+.year-break {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -48px;
+}
+
+.year-line{
+    margin-bottom: 64px;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(180deg, #fff 50%, transparent 0);
+    background-size: 2px 24px;
+    position: relative;
+}
+
 
 .statistic{
     background:hsla(0,0%,100%,.03);
@@ -44,3 +88,35 @@
     font-size: 1.5rem;
 }
 
+.divider {
+  position: relative;
+  padding: 2.5rem;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 14px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    white 0 12px,
+    transparent 12px 22px
+  );
+  transform: translateX(-50%);
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
