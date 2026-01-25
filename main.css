@@ -1,0 +1,17 @@
+@import url("common.css");
+
+@import url("style/navigation.css");
+@import url("style/hero.css");
+@import url("style/top-description.css");
+@import url("style/lecture.css");
+@import url("style/how.css");
+@import url("style/sliding-animations.css");
+@import url("style/schedule.css");
+
+@import url("style/gold-sponsors.css");
+@import url("style/other-sponsors.css");
+@import url("style/notice-board.css");
+@import url("style/app-info.css");
+@import url("style/gallery.css");
+@import url("style/contact.css");
+@import url("style/footer.css");
