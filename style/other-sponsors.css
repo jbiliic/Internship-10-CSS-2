@@ -38,3 +38,73 @@
     height: 8.75rem;
     background-position: center;
 }
+
+@media(min-width: 600px){
+
+    .silver-pyramid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .silver-pyramid > *{
+        grid-column: span 2;
+    }
+
+    .silver-pyramid > *:nth-child(7),
+    .silver-pyramid > *:nth-child(8){
+        grid-column: span 3;
+    }
+    
+    .silver-pyramid > *:nth-child(9){
+        grid-column: span 6;
+    }
+
+
+    .bronze-container{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .bronze-container .sponsor-wrapper{
+        width: auto;
+    }
+
+
+    .partners-pyramid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .partners-pyramid > *{
+        grid-column: span 2;
+    }
+
+    .partners-pyramid > *:nth-child(4),
+    .partners-pyramid > *:nth-child(5){
+        grid-column: span 3;
+    }
+    
+}
+
+@media(min-width: 900px){
+    
+    .silver-pyramid{
+        grid-template-columns: repeat(20, 1fr);
+    }
+    
+    .silver-pyramid > *{
+        grid-column: span 4;
+    }
+    
+    .silver-pyramid > *:nth-child(6),
+    .silver-pyramid > *:nth-child(7),
+    .silver-pyramid > *:nth-child(8),
+    .silver-pyramid > *:nth-child(9){
+        grid-column: span 5;
+    }
+
+    .partners-pyramid{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+}

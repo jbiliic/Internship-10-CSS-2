@@ -1,0 +1,84 @@
+.app-info-title{
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-weight: 800;
+}
+
+.phone-image-wrapper{
+    width: 100%;
+}
+
+.content-wrapper{
+    width: 17.5rem;
+    margin: auto;
+}
+
+@media(min-width: 770px){
+    .app-info-wrapper{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-direction: row-reverse;
+    }
+
+    .content-wrapper{
+        padding-left: 200px;
+    }
+
+    .phone-image-wrapper{
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        flex: 0 0 60%;
+    }
+
+    .content-wrapper{
+        flex: 0 0 40%;
+    }
+}
+
+.app-info-item{
+    margin-top: 5rem;
+    position: relative;
+}
+
+.info-item-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    left: -1.5rem;
+    top: -0.5rem;
+    z-index: 0;
+}
+
+.info-item-title{
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.info-item-description{
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    max-width: 17.5rem;
+}
+
+.apply-button{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 2rem;
+    font-size: 1rem;
+    background-color: var(--dump-cyan);
+    border-radius: 15px;
+    color: #0a181b;
+    font-weight: 900;
+    margin-top: 2.5rem;
+
+}
