@@ -4,6 +4,7 @@
     --dump-cyan: #30CEC2;
     --title-color: #fff;
     --text-secondary: hsla(0, 0%, 100%, .8);
+    --card-background: #FFFFFF0D;
     
     /* fonts */
     --main-font: 'FuseV.2Display-Regular', sans-serif;
@@ -25,11 +26,12 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased; 
+    scroll-behavior: smooth;
    
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--main-font);
-    font-weight: 800;               
+    font-weight: 400;               
 }
 a {
     color: inherit;
